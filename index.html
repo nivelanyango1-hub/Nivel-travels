@@ -1,201 +1,145 @@
-<!DOCTYPE html>
+
+          
+   <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivel Travels</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nivel Travels</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<!-- Welcome Popup -->
+<div class="popup" id="popup">
+
+<div class="popup-content">
+
+<h2>✈ Welcome to Nivel Travels</h2>
+
+<p>
+Discover amazing destinations around the world.
+Book your dream vacation with us today!
+</p>
+
+<button class="close-btn" onclick="closePopup()">
+Start Exploring
+</button>
+
+</div>
+</div>
+
+<!-- Navigation -->
+
 <header>
-    <h1>Nivel Travels</h1>
-    <p>Your Trusted Travel Management Partner</p>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<h1>Nivel Travels</h1>
+
+<p>Your Trusted Travel Management Partner</p>
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#destinations">Destinations</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#booking">Booking</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
 </header>
-<section class="hero" id="home">
-    <h1>Explore the World with Nivel Travels</h1>
-    <p>Your Trusted Travel Partner</p>
-    <a href="#contact" class="btn">Book Now</a>
-</section>
-<hr>
 
-<section id="welcome">
-    <h2>Welcome to Nivel Travels</h2>
-    <p>
-        Explore amazing destinations, book exciting tours,
-        and enjoy unforgettable travel experiences with us.
-    </p>
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<h1>Explore The World</h1>
+
+<p>
+Travel with comfort, adventure and unforgettable memories.
+</p>
+
+<a href="#booking" class="btn">
+Book Your Trip
+</a>
+
 </section>
+
+<!-- About -->
 
 <section id="about">
-    <h2>About Us</h2>
-    <p>
-        Nivel Travels is a travel management company dedicated
-        to providing affordable travel packages, holiday planning,
-        hotel bookings, and transport services.
-    </p>
+
+<h2>About Nivel Travels</h2>
+
+<p>
+
+Nivel Travels provides holiday packages,
+flight booking,
+hotel reservations,
+visa assistance,
+tour guiding,
+and unforgettable travel experiences.
+
+</p>
+
 </section>
+
+<!-- Destinations -->
+
+<section id="destinations">
+
 <h2>Popular Destinations</h2>
 
 <div class="cards">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1431274172761-fca41d930114" width="100%">
+
+<img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=500">
+
 <h3>Paris</h3>
+
 <p>5 Days Tour</p>
+
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" width="100%">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500">
+
 <h3>Dubai</h3>
+
 <p>7 Days Tour</p>
+
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd" width="100%">
+
+<img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=500">
+
 <h3>Zanzibar</h3>
+
 <p>4 Days Tour</p>
-</div>
 
 </div>
-<hr>
 
-<section id="destinations">
-    <h2>Popular Destinations</h2>
+</div>
 
-    <article>
-        <h3>Diani Beach</h3>
-        <p>Enjoy Kenya's beautiful white sandy beaches.</p>
-    </article>
-
-    <article>
-        <h3>Maasai Mara</h3>
-        <p>Experience wildlife safaris and adventure.</p>
-    </article>
-
-    <article>
-        <h3>Zanzibar</h3>
-        <p>Discover the beauty of the Indian Ocean.</p>
-    </article>
 </section>
 
-<hr>
+    
+   
 
-<section id="gallery">
-    <h2>Travel Gallery</h2>
 
-    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400"
-         alt="Beach Destination" width="300">
-
-    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400"
-         alt="Safari Adventure" width="300">
-
-    <img src="https://images.unsplash.com/photo-1468413253725-0d5181091126?w=400"
-         alt="Travel Destination" width="300">
-
-    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400"
-         alt="Tourist Travel" width="300">
-</section>
-
-<hr>
-
-<section>
-    <h2>Services We Offer</h2>
-
-    <ul>
-        <li>Holiday Packages</li>
-        <li>Hotel Reservations</li>
-        <li>Flight Booking</li>
-        <li>Visa Assistance</li>
-        <li>Tour Guiding Services</li>
-    </ul>
-</section>
-
-<hr>
-
-<section>
-    <h2>Travel Packages</h2>
-
-    <table border="1">
-        <tr>
-            <th>Package ID</th>
-            <th>Destination</th>
-            <th>Duration</th>
-            <th>Price (KES)</th>
-        </tr>
-
-        <tr>
-            <td>T001</td>
-            <td>Diani Beach</td>
-            <td>3 Days</td>
-            <td>25,000</td>
-        </tr>
-
-        <tr>
-            <td>T002</td>
-            <td>Maasai Mara</td>
-            <td>5 Days</td>
-            <td>50,000</td>
-        </tr>
-
-        <tr>
-            <td>T003</td>
-            <td>Zanzibar</td>
-            <td>4 Days</td>
-            <td>65,000</td>
-        </tr>
-    </table>
-</section>
-
-<hr>
-
-<section>
-    <h2>Travel Video</h2>
-
-    <video width="600" controls>
-        <source src="videos/travel-showcase.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</section>
-
-<hr>
-
-<section>
-    <h2>Travel Documentary</h2>
-
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/Scxs7L0vhZ4"
-        title="Travel Video"
-        allowfullscreen>
-    </iframe>
-</section>
-
-<hr>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@niveltravels.com</p>
-    <p>Phone: +254 700 123 456</p>
-    <p>Location: Nairobi, Kenya</p>
-</section>
-
-<hr>
-
-<footer>
-    <p>&copy; 2026 Nivel Travels. All Rights Reserved.</p>
-</footer>
-<script src="script.js"></script>
-</body>
-  </html>
