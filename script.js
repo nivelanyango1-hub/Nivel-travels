@@ -1,7 +1,14 @@
-// Welcome Message
-alert("Welcome to Nivel Travels! We are happy to serve you.");
+// Show welcome popup when the page loads
+window.onload = function () {
+    document.getElementById("popup").style.display = "flex";
+};
 
-// Form Validation
+// Close popup
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+// Booking form validation
 function validateForm() {
 
     let name = document.forms["travelForm"]["name"].value;
@@ -9,8 +16,8 @@ function validateForm() {
     let phone = document.forms["travelForm"]["phone"].value;
     let gender = document.forms["travelForm"]["gender"].value;
 
-    if (name == "") {
-        alert("Please enter your name.");
+    if (name === "") {
+        alert("Please enter your full name.");
         return false;
     }
 
@@ -24,15 +31,16 @@ function validateForm() {
     let phonePattern = /^[0-9]{10}$/;
 
     if (!phonePattern.test(phone)) {
-        alert("Phone number must contain exactly 10 digits.");
+        alert("Phone number should contain exactly 10 digits.");
         return false;
     }
 
-    if (gender == "") {
+    if (gender === "") {
         alert("Please select your gender.");
         return false;
     }
 
-    alert("Form submitted successfully!");
-    return true;
+    alert("🎉 Thank you for booking with Nivel Travels!\nWe will contact you soon.");
+
+    return false;
 }
