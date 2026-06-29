@@ -73,4 +73,24 @@ footer{
     text-align:center;
     padding:15px;
 }
-</style>
+
+.hero{
+    height:100vh;
+    background-image:url("https://images.unsplash.com/photo-1502920917128-1aa500764ce7");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.btn{
+    background:orange;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:20px;
+}
